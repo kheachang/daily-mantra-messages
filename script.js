@@ -13,7 +13,14 @@ const randomMessageProgram = (greeting, message, end) => {
   }
   randomEnd = Math.floor(Math.random()*(end.length));
   
-  return greeting[randomGreeting] + ' ' + text + message[randomMessage] + '.' + ' ' + end[randomEnd];
+  return console.log(greeting[randomGreeting] + ' ' + text + message[randomMessage] + '.' + ' ' + end[randomEnd]);
 }
-console.log(randomMessageProgram(greeting, message, end));
-//console.log(pastRandomNumber);
+
+//DOM
+let button = document.getElementById('button');
+
+function runProgram(event) {
+  
+}
+
+button.onclick = runProgram; 
